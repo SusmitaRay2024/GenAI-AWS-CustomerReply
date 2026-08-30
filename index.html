@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ResolveX AI | Customer Support</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="app-shell">
+
+    <!-- =========================
+         TOP BAR
+    ========================== -->
+    <header class="topbar">
+
+      <a class="brand brand-link" href="complaint.html">
+
+        <img
+          src="corporates-guide-logo.png"
+          alt="Corporates Guide"
+          class="company-logo"
+        >
+
+        <div>
+          <div class="product-name">ResolveX</div>
+          <div class="tagline">AI-powered customer query</div>
+        </div>
+
+      </a>
+
+
+      <!-- PROFILE -->
+      <div class="profile">
+
+        <div class="avatar" id="avatar">CU</div>
+
+        <div class="profile-info">
+          <strong id="profileName">Customer</strong>
+          <small id="profileEmail">customer@example.com</small>
+        </div>
+
+        <button
+          class="profile-btn"
+          id="profileBtn"
+          type="button"
+          aria-label="Open profile menu"
+        >
+          ⌄
+        </button>
+
+
+        <!-- PROFILE MENU -->
+        <div class="profile-menu hidden" id="profileMenu">
+
+          <strong id="menuName">Customer</strong>
+
+          <span id="menuEmail">
+            customer@example.com
+          </span>
+
+          <button type="button" id="logoutBtn">
+            Sign out
+          </button>
+
+        </div>
+
+      </div>
+
+    </header>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+    <main>
+
+
+      <!-- =========================
+           HERO SECTION
+      ========================== -->
+      <section class="hero">
+
+        <div>
+
+          <span class="eyebrow">
+            CUSTOMER SUPPORT WORKSPACE
+          </span>
+
+          <h1>
+            Hello,
+            <span id="welcomeName">Customer</span>
+          </h1>
+
+          <p>
+            Tell us about your issue and ResolveX will create
+            a professional, helpful response for you.
+          </p>
+
+        </div>
+
+
+        <div class="hero-badge">
+          <span class="pulse"></span>
+          AI Assistant Online
+        </div>
+
+      </section>
+
+
+
+      <!-- =========================
+           WORKSPACE
+      ========================== -->
+      <section class="workspace">
+
+
+        <!-- =========================
+             CUSTOMER QUERY CARD
+        ========================== -->
+        <div class="card input-card">
+
+          <div class="card-heading">
+
+            <div class="icon">
+              ✦
+            </div>
+
+            <div>
+
+              <!-- DYNAMIC CUSTOMER NAME -->
+              <h2>
+                <span id="queryName">Customer</span>'s Query
+              </h2>
+
+              <p>
+                Describe your issue below.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <!-- COMPLAINT INPUT -->
+          <textarea
+            id="complaint"
+            maxlength="5000"
+            placeholder="Example: I received the wrong product in my order. Please help me resolve this issue."
+          ></textarea>
+
+
+          <!-- INPUT FOOTER -->
+          <div class="input-footer">
+
+            <span id="counter">
+              0 / 5000
+            </span>
+
+            <button
+              class="generate-btn"
+              id="generateBtn"
+              type="button"
+            >
+
+              <span>
+                Generate Reply
+              </span>
+
+              <span class="arrow">
+                →
+              </span>
+
+            </button>
+
+          </div>
+
+
+          <!-- STATUS -->
+          <div
+            id="status"
+            class="status hidden"
+            aria-live="polite"
+          ></div>
+
+        </div>
+
+
+
+        <!-- =========================
+             RESPONSE CARD
+        ========================== -->
+        <div class="card reply-card">
+
+          <div class="card-heading">
+
+            <div class="icon reply-icon">
+              ✓
+            </div>
+
+            <div>
+
+              <h2>
+                Response
+              </h2>
+
+              <p>
+                Your professional response will appear here.
+              </p>
+
+            </div>
+
+
+            <button
+              id="copyBtn"
+              class="copy-btn"
+              type="button"
+              disabled
+            >
+              Copy
+            </button>
+
+          </div>
+
+
+          <!-- GENERATED REPLY -->
+          <div
+            id="reply"
+            class="reply-area empty"
+          >
+
+            <div class="empty-state">
+
+              <div class="empty-icon">
+                AI
+              </div>
+
+              <strong>
+                Ready to help
+              </strong>
+
+              <span>
+                Your generated response will appear here.
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- =========================
+           WORKFLOW
+      ========================== -->
+      <section class="process">
+
+        <div class="process-title">
+
+          <span>
+            RESOLVEX WORKFLOW
+          </span>
+
+          <h2>
+            Simple for the customer. Powerful behind the scenes.
+          </h2>
+
+        </div>
+
+
+        <div class="steps">
+
+
+          <div class="step">
+
+            <b>01</b>
+
+            <div>
+              <strong>Login</strong>
+              <span>Your details are captured</span>
+            </div>
+
+          </div>
+
+
+          <div class="line"></div>
+
+
+          <div class="step">
+
+            <b>02</b>
+
+            <div>
+              <strong>Submit</strong>
+              <span>Complaint is entered</span>
+            </div>
+
+          </div>
+
+
+          <div class="line"></div>
+
+
+          <div class="step">
+
+            <b>03</b>
+
+            <div>
+              <strong>Generate</strong>
+              <span>Nova Lite creates a reply</span>
+            </div>
+
+          </div>
+
+
+          <div class="line"></div>
+
+
+          <div class="step">
+
+            <b>04</b>
+
+            <div>
+              <strong>Resolve</strong>
+              <span>Response is displayed</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer>
+      ResolveX • Corporates Guide • Human review recommended before sending
+    </footer>
+
+  </div>
+
+
+  <!-- =========================
+       JAVASCRIPT
+  ========================== -->
+  <script src="complaint.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ResolveX  | Welcome</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+  <main class="login-layout">
+    <section class="login-visual">
+      <div class="visual-brand">
+        <img src="corporates-guide-logo.png" alt="Corporates Guide" class="company-logo">
+        <div class="product-name">ResolveX </div>
+      </div>
+      <div class="visual-content">
+        <span class="eyebrow"></span>
+        <h1>Every problem deserves a <span>smart solution.</span></h1>
+        <p>Welcome to ResolveX. Sign in to submit your customer query and get a clear, professional response.</p>
+        <div class="visual-points">
+          <div><b>✦</b><span>AI-powered response generation</span></div>
+          <div><b>✓</b><span>Professional and empathetic replies</span></div>
+          <div><b>↗</b><span>Fast, simple customer support</span></div>
+        </div>
+      </div>
+      <div class="visual-footer">Corporates Guide • ResolveX </div>
+    </section>
+
+    <section class="login-panel">
+      <div class="login-card">
+        <div class="login-icon">CG</div>
+        <h2>Welcome to ResolveX </h2>
+        <p class="login-subtitle">Enter your details to continue.</p>
+
+        <form id="loginForm">
+          <label for="customerName">Your name</label>
+          <input id="customerName" type="text" placeholder="Enter your full name" autocomplete="name" required>
+
+          <label for="customerEmail">Email address</label>
+          <input id="customerEmail" type="email" placeholder="you@example.com" autocomplete="email" required>
+
+          <button class="primary-btn" type="submit">
+            <span>Continue to Query</span><span>→</span>
+          </button>
+
+          <div id="loginStatus" class="status hidden" aria-live="polite"></div>
+        </form>
+
+        <div class="login-note">
+          <span class="dot"></span>
+          Your support workspace is ready
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="login.js"></script>
+</body>
+</html>
